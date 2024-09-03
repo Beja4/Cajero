@@ -1,0 +1,568 @@
+.contenedor{
+width: 100%;
+
+margin:0 auto;
+overflow: hidden;
+
+}
+
+
+
+
+body{
+background-color:lavender;
+
+
+}
+
+
+
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Cambiado de flex-end a center */
+  justify-content: space-evenly;
+  background-color: cornflowerblue;
+  flex-direction: row;
+  border-radius: 10px;
+  position: fixed; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+  border: 2px solid darkblue; /* Cambiado a solid */
+  
+}
+
+.nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+#nav-logo {
+border-radius: 5%;
+  width: 100px; /* Ajusta el tamaño del logo si es necesario */
+  height: 100px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+
+#user {
+  display: flex;
+  position: fixed;
+  border-radius: 50%;
+  width: 40px; /* Ajusta el tamaño de la imagen del usuario si es necesario */
+  height: 40px; /* Ajusta el tamaño de la imagen del usuario si es necesario */
+  margin-left: 3px;
+  margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.nav-flex b {
+  margin-right: 10px; /* Espacio entre el texto "Ayuda" y el input */
+  transition: 0.5s ease;
+cursor: pointer;
+}
+
+
+.nav-flex input[type="text"] {
+  background-color:lightgray;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+  
+}
+
+
+
+
+
+
+
+.item-1{
+  height:10px;
+  width: 10px;
+  background-color: rgb(42, 134, 165);
+  margin: 10px;
+  border-radius: 5px;
+  color: rgb(31, 32, 32);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+
+.logo{
+ display: flex;
+ justify-content: center;
+}
+
+
+
+
+.logo img{
+  height: 100px;
+  width: 100px;
+ 
+}
+
+
+
+
+/* la clase de container va a indicar a los elementos DENTRO DE ESE DIV COMO DEBEN DE ACOMODARSE,
+ mientras que el de arriba el item-1 hace el dise;o de las cajas*/
+
+.container{
+  margin-top: 170px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+  gap:10px;
+    align-items:center;
+   
+}
+
+
+#item1, #item2, #item3, #item4{
+height: 130px;
+width: 120px;
+padding: 10px;
+margin: 10px;
+background-image:radial-gradient(at 50px 50px, cornflowerblue, rgb(91, 112, 179));
+color:white;
+text-align: center;
+align-content:center;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.aside-container{
+display: flex;
+flex-direction: column;
+justify-content: flex-end; /* Centra los elementos verticalmente */
+align-items: flex-end; 
+margin-top: 150px;
+gap:20px;
+
+
+}
+
+.aside{
+
+margin-right: 5px;
+padding-top: 10px;
+padding-left: 2px;
+height: 200px;
+width: 200px;
+background-color: darkslateblue;
+color: aliceblue;
+box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.60);
+}
+
+
+#operaciones{
+display: none;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-left: 420px;
+border-left: 20px;
+height: 500px;
+width: 400px;
+color: solid, white;
+background-image:radial-gradient(at 50px 50px, cornflowerblue, rgb(91, 112, 179));
+border-radius: 5%;
+}
+.menu-operacion{
+display: block;
+
+}
+
+.slider-container{
+display: flex;
+margin-top: -37%;
+margin-left: 10px;
+align-items: flex-start;
+justify-content: flex-start;
+width: 80%;
+height: 500px;
+
+gap:10px;
+
+}
+
+.slider img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid white;
+  transition:all ease-in-out 0.5s;
+
+}
+.slider img:hover{
+width:55%;
+
+}
+
+
+
+
+
+.menu{
+ /* border: 1px solid black; para que se distinga el contenedor en caso de ser necesario*/
+height: 400px;
+display: flex;
+justify-content: space-around;
+align-items:center;
+
+
+
+}
+
+.select{
+  border: solid black;
+  width: 150px;
+  height: 170px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  
+}
+
+.select p{
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*dise;o boton crear cuenta el bro es el contenedor papa*/
+
+.bro{
+ display: flex;
+ justify-content: space-around;
+ margin: 80px;
+ z-index: -1;
+}
+
+
+
+.acount{
+  display: flex;
+height: 70px;
+width: 200px;
+background-color: goldenrod;
+border-radius: 5px;
+display: flex;
+align-items:center;
+justify-content: center;
+
+}
+
+.btn{ 
+padding: 15px 40px;
+border: none;
+outline: none;
+background-color: black;
+color: white;
+cursor: pointer;
+/* position: relative; */
+
+border-radius: 12px;
+
+}
+.btn:hover{
+color: gold;
+background-color: white;
+
+}
+
+.btn:active{
+color: white;
+background-color: darkorange;
+
+}
+
+
+
+
+
+
+
+
+/*dise;o de iconos*/
+.menu img{ 
+width: 100px;
+height: 100px;
+filter: brightness(100%);
+transition: 0.5s ease;
+cursor: pointer;
+}
+
+.menu img:hover{
+  transform: scale(1.3);
+  filter: grayscale(5%);
+}
+
+.menu p{
+ color: blue;
+ font-size: medium;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.select p{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#fondo-ahorro, #bitcoin, #impuestos{
+  margin-left: 15px;
+}
+
+
+.main-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
+  
+}
+
+ .container-cash, .container-cash2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* border: 2px, solid black; */
+  margin-top: 20px;
+} 
+
+.cash, .tarjet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cash img, .tarjet img {
+  width: 80px;
+  height: 80px;
+}
+
+.cash ul, .tarjet ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cash li, .tarjet li {
+  margin: 5px 0;
+}
+
+
+
+.tarjet img{
+width: 80px;
+height: 80px;
+
+}
+
+.tarjet ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px;
+}
+
+
+
+
+
+
+
+.footer {
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(to right, #3b3a3a, #aeaba9);
+  color: white;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flex a columna */
+  justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
+  border-radius: 10px;
+  padding: 10px 25px; /* Ajusta el padding para tener consistencia */
+  gap: 20px;
+}
+
+.text-footer-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+.text-footer {
+  filter: brightness(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.text-footer:hover {
+  transform: scale(1.3);
+  filter: grayscale(5%);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+@media  (max-width: 60rem) {
+  .nav {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav input{
+width: 10px;
+
+  }
+
+.nav img{
+display: none;
+
+}
+
+
+ .slider-container{
+  display:flex;
+ justify-content: space-between;
+ align-items: flex-end;
+} 
+
+.slider-container img{
+display: flex;
+height: 120px;
+width: 120px;
+
+}
+
+.slider-container img:hover {
+  /* Establece los estilos al estado original o desactiva el hover */
+  transform: none;  /* Ejemplo si usas transform */
+  opacity: 1;       /* Ejemplo si usas opacity */
+  
+}
+
+
+
+
+
+  #item1, #item2, #item3, #item4{
+    /* height: 300px;
+    width: 300px; */
+    background-image:radial-gradient(at 50px 50px, cornflowerblue, rgb(91, 112, 179));
+    color:white;
+   display: flex; 
+   flex-direction: column;
+  }
+
+.operaciones-container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 410px;
+}
+  
+
+
+.menu{
+  display: flex;
+flex-wrap: wrap;
+
+}
+
+.acount{
+  display: flex;
+height: 35px;
+width: 100px;
+}
+
+.btn{
+display:flex;
+height: 15px;
+width: 80px;
+
+}
+
+.btn strong{
+position: relative;
+right: 17px;
+bottom: 10px;
+font-size: smaller;
+
+
+}
+
+.main-container{
+display: flex;
+flex-direction: column;
+
+}
+
+.footer{
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+}
+
+
+
+
+
+
+
+
